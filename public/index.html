@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    	<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+		<!-- Stylesheets -->
+		<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons%7CRoboto:400,500,700%7CLato:400,500,700&amp;subset=latin,latin-ext" />
+		<link type="text/css" rel="stylesheet" href="css/reset.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/otgrid.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/main-stylesheet.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/ot-lightbox.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/shortcodes.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/custom-styles.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/responsive.min.css" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body class="ot-menu-will-follow" >
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app" style="margin-top:0px;"></div>
+    <!-- built files will be auto injected -->
+    <script type="text/javascript" src="jscript/jquery-latest.min.js"></script>
+		<script>
+			// var _otmLogo = 'Template';
+			var _otmLogo = '<img src="images/logo.png" alt="OrangeThemes" />';
+			var _otmSearch = "blog.html";
+		</script>
+		<script type="text/javascript" src="jscript/otmenu.min.js"></script>
+		<script type="text/javascript" src="jscript/theme-scripts.min.js"></script>
+		<script type="text/javascript" src="jscript/ot-lightbox.min.js"></script>
+
+
+		<script type="text/javascript" src="jscript/theia-sticky-sidebar.min.js"></script>
+
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				var margintop = (jQuery("body").hasClass("ot-menu-will-follow"))?70:30;
+				jQuery('.theiaStickySidebar', "body").parent().theiaStickySidebar({
+					additionalMarginTop: margintop
+				});
+			});
+		</script>
+  </body>
+</html>
